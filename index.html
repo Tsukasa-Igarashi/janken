@@ -1,21 +1,51 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>JavaScriptじゃんけんゲーム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="wrap">
-        <div class="computer"></div>
-        <div class="me-jan">
-            <div class="btn">グー</div>
-            <div class="btn">チョキ</div>
-            <div class="btn">パー</div>
-        <div class="btn-more"></div>
+    <header>
+        <h1>じゃんけん</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <p>コンピュータ</p>
+            <div class="computer">
+                <div class="hand"></div>
+            </div>
+
+        </div>
+
+        <div class="me_img"></div>
+
+        <div class="row">
+            <p>ユーザー</p>
+            <div class="me">
+                <div class="col-sm-2 col-sm-offset-1 btn btn-primary">グー</div>
+                <div class="col-sm-2 col-sm-offset-2 btn btn-primary">チョキ</div>
+                <div class="col-sm-2 col-sm-offset-2 btn btn-primary">パー</div>
+            </div>
+            
+            <div id="more_jan" class="col-sm-2 col-sm-offset-5 btn btn-primary">もう一回</div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+
+    <script src="js/janken.js"></script>
 </body>
+
 </html>
