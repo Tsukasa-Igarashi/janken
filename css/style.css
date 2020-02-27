@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.computer {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    height: 200px;
+    display: inline-block;
+}
