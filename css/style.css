@@ -46,3 +46,10 @@ p {
 .btn {
     margin-top: 50px;
 }
+
+#vs {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
